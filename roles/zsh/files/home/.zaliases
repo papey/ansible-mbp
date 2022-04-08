@@ -1,0 +1,80 @@
+# ls
+alias ls='exa'
+alias ll='exa -l'
+alias lll='exa -l | less'
+alias lla='exa -la'
+alias llt='exa -T'
+alias llfu='exa -bghHliS --git'
+
+# cat
+alias cat="BAT_THEME='Solarized (light)' bat --style=plain --pager=never "
+alias bat="BAT_THEME='Solarized (light)' bat"
+
+# cp
+alias cp='cp -R'
+
+# dig
+alias dig='dog'
+
+# scp
+alias scp='scp -r'
+
+# grep
+alias grep='rg'
+
+# ça pipe
+alias -g G=' | grep'
+alias -g L=' | less'
+alias -g M=' | most'
+alias -g NE=' 2> /dev/null'
+alias -g NUL=' > /dev/null 2>&1'
+alias -g S=' | sort'
+alias -g T='tail -f'
+alias -g W=' | wc -l'
+
+# cd
+alias ..='cd ..'
+alias s='cd ..'
+alias d-='cd -'
+
+# mkdir
+alias mkdir='mkdir -p'
+
+# vi
+alias vi='vim'
+
+# tar
+alias jtetar='tar -cvf'
+alias jtedtar='tar -xvf'
+
+# git
+alias g='git'
+alias hd='git rev-parse HEAD'
+alias gt='gita'
+alias gtg='gita ls'
+alias gts='gita ll'
+
+# code
+alias c.='code .'
+alias c='code'
+
+# make
+alias m='make'
+
+# sudo
+alias s='sudo '
+alias se='sudoedit'
+
+# docker
+alias d='docker'
+alias dc='docker-compose'
+
+# kube
+alias k='kubectl'
+
+# ansible
+alias ap='ansible-playbook'
+alias ag='ansible-galaxy'
+
+# clipboard
+alias -g xxc=' | pbcopy'

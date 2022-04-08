@@ -1,0 +1,48 @@
+[user]
+    name = Wilfried OLLIVIER
+    email = wilfried.ollivier@doctolib.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    ac =  !git add . && git commit -am
+    a = add
+    ap = add -p
+    co = checkout
+    cob = checkout -b
+    d = diff
+    pr = pull --rebase
+    dc = diff --cached
+    cv = commit --verbose
+    ci = commit
+    cam = commit -am
+    s = status -s
+    poop = push
+    br = branch
+    hist = log --pretty=format:\"%Cred%h%Creset - %C(blue)%ad%Creset %Cgreen→%Creset %s%C(yellow)%d%Creset %C(magenta)[%an]%Creset\" --graph --date=short
+    unst = reset HEAD
+    la = "!git config -l | grep alias | cut -c 7-"
+[http]
+    sslVerify = true
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[commit]
+    gpgsign = false
+[difftool]
+    prompt = false
+[diff]
+    tool = vimdiff
+[grep]
+    linenumber = true
+[pull]
+    rebase = true
+
+[includeIf "gitdir:~/code/work/"]
+    path = .gitconfig.docto
+
+[includeIf "gitdir:~/code/personal/"]
+    path = .gitconfig.personal

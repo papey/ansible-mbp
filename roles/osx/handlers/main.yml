@@ -1,0 +1,10 @@
+---
+- name: killall Dock
+  command: killall Dock
+  become: true
+  ignore_errors: true
+
+- name: killall Finder
+  command: killall Finder
+  become: true
+  ignore_errors: true

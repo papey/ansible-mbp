@@ -1,0 +1,59 @@
+---
+- name: Don’t automatically rearrange Spaces based on most recent use
+  osx_defaults:
+    domain: com.apple.dock
+    key: mru-spaces
+    type: bool
+    value: false
+    state: present
+  notify: killall Dock
+
+- name: Automatically hide and show the Dock
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
+    state: present
+  notify: killall Dock
+
+- name: Don’t show recent applications in Dock
+  osx_defaults:
+    domain: com.apple.dock
+    key: show-recents
+    type: bool
+    value: false
+    state: present
+  notify: killall Dock
+
+- name: Orientation
+  osx_defaults:
+    domain: com.apple.dock
+    key: orientation
+    type: string
+    value: bottom
+    state: present
+  notify: killall Dock
+
+- name: Set size of icons
+  osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: float
+    value: 40
+    state: present
+  notify: killall Dock
+
+- name: Setup Magic Corners
+  osx_defaults:
+    domain: com.apple.dock
+    key: "{{ item.key }}"
+    type: int
+    value: "{{ item.value }}"
+    state: present
+  notify: killall Dock
+  with_items:
+    - { desc: "Lock the creen", key: "wvous-br-corner", value: 13 }
+    - { desc: "Desktop", key: "wvous-tr-corner", value: 4 }
+    - { desc: "Mission Control", key: "wvous-tl-corner", value: 2 }
+    - { desc: "App Windows", key: "wvous-bl-corner", value: 3 }

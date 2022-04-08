@@ -1,0 +1,41 @@
+---
+pkgs:
+  - mas
+  - git
+  - ansible
+  - python
+  - exa
+  - bat
+  - dog
+  - ripgrep
+  - thefuck
+  - fzf
+  - zsh
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+  - romkatv/powerlevel10k/powerlevel10k
+  - ranger
+  - gnupg
+  - curlie
+  - rustup-init
+  - go
+  - elixir
+  - node
+  - yarn
+  - crystal
+  - rbenv
+  - nvm
+
+casks:
+  - amethyst
+  - firefox
+  - iterm2
+  - spotify
+  - alfred
+  - dteoh-devdocs
+  - docker
+  - font-victor-mono-nerd-font
+  - alt-tab
+  - discord
+  - telegram
+  - time-out

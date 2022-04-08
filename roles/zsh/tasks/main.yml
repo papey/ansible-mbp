@@ -1,0 +1,23 @@
+---
+- name: Ensure directory
+  file:
+    path: "{{ ansible_env.HOME }}/.zplugins"
+    state: directory
+
+- name: Ensure fzf tab
+  git:
+    repo: https://github.com/Aloxaf/fzf-tab.git
+    dest: "{{ ansible_env.HOME }}/.zplugins/fzf-tab"
+
+- name: Copy zsh configs
+  copy:
+    src: "home/{{ item }}"
+    dest: "{{ ansible_env.HOME }}/{{ item }}"
+  with_items:
+    - .p10k.zsh
+    - .zshrc
+    - .zaliases
+    - .zutils
+    - .zshenv
+    - .zlogin
+    - .zdocto

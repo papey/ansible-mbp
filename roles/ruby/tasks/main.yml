@@ -1,0 +1,25 @@
+---
+- name: Ensure rbenv
+  homebrew:
+    name: rbenv
+    state: present
+
+- name: Ensure gems
+  gem:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - rubocop
+    - rubocop-daemon
+    - solargraph
+
+- name: Ensure rubocop-daemon-wrapper dir
+  file:
+    path: /usr/local/bin/rubocop-daemon-wrapper
+    state: directory
+
+- name: Ensure robocop-daemon-wrapper
+  get_url:
+    url: https://raw.githubusercontent.com/fohte/rubocop-daemon/master/bin/rubocop-daemon-wrapper
+    dest: /usr/local/bin/rubocop-daemon-wrapper/rubocop
+    mode: +x

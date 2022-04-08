@@ -1,0 +1,38 @@
+# rbenv
+if command -v rbenv > /dev/null 2>&1; then
+  eval "$(rbenv init -)";
+fi
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# doctolib utils
+function devb() {
+    bundle
+    DISABLE_WEBPACKER_SERVER=1 HTTPS=1 rails s -u thin -b 127.0.0.1
+}
+
+function devf() {
+    npm run dev
+}
+
+function devq() {
+    export RAILS_LOG_TO_STDOUT=true && bundle exec rake resque:work
+}
+
+function devf-update() {
+    nvm install -s
+    npm install
+}
+
+function devb-update() {
+    bundle install
+    bundle exec rake db:migrate
+}
+
+function dev-update() {
+    devf-update
+    devb-update
+}

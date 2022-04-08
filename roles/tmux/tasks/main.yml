@@ -1,0 +1,10 @@
+---
+- name: Ensure tmux
+  homebrew:
+    name: tmux
+    state: present
+
+- name: Put tmux.conf
+  copy:
+    src: home/.tmux.conf
+    dest: "{{ ansible_env.HOME }}/.tmux.conf"

@@ -1,0 +1,40 @@
+---
+- hosts: local
+  roles:
+    - role: prepare
+      tags:
+        - prepare
+    - role: hostname
+      tags:
+        - hostname
+    - role: osx
+      tags:
+        - osx
+    - role: pkgs
+      tags:
+        - pkgs
+    - role: zsh
+      tags:
+        - zsh
+    - role: tmux
+      tags:
+        - tmux
+    - role: vim
+      tags:
+        - vim
+    - role: gpg
+      tags:
+        - gpg
+    - role: git
+      tags:
+        - git
+    - role: ruby
+      tags:
+        - ruby
+    - role: vsc
+      tags:
+        - vsc
+    # TODO
+    #- role: ergodox
+    # tags:
+    #   - ergodox

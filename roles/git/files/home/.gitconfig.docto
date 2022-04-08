@@ -1,0 +1,8 @@
+[user]
+    name = Wilfried OLLIVIER
+    email = wilfried.ollivier@doctolib.com
+    signingkey = 5E36C965764181ED
+[core]
+    sshCommand = "ssh -i ~/.ssh/id_ecdsa -F /dev/null"
+[commit]
+    gpgsign = true

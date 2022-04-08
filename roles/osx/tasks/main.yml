@@ -1,0 +1,9 @@
+---
+- name: Dock
+  import_tasks: dock.yml
+ 
+- name: Finder
+  import_tasks: finder.yml
+
+- name: Settings
+  import_tasks: settings.yml

@@ -1,0 +1,26 @@
+# zsh functions
+
+function fu {
+    echo -e "🍺🍺🍺 Homebrew"
+    brew update
+    brew upgrade
+    brew cleanup -s
+    echo "\n\n💻💻💻 AppStore"
+    mas outdated
+    echo -e "\n\n Code"
+    gita super pull
+    echo -e "\n\n Rust"
+    rustup update
+    echo -e "\n\n Node"
+    yarn global upgrade
+    echo -e "\n\n Ruby"
+    gem update
+}
+
+function gg {
+    cd "$(gita ls $1)"
+}
+
+function oc {
+    code "$(gita ls $1)"
+}

@@ -1,0 +1,20 @@
+---
+- name: Ensure git
+  homebrew:
+    name: git
+    state: present
+
+- name: Git config
+  copy:
+    src: "home/{{ item }}"
+    dest: "{{ ansible_env.HOME }}/{{ item }}"
+  with_items:
+    - .gitconfig
+    - .gitconfig.docto
+    - .gitconfig.personal
+
+- name: Ensure gita
+  pip:
+    name: gita
+    executable: pip3
+    state: present

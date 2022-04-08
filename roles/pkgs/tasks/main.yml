@@ -1,0 +1,19 @@
+---
+- name: Update and upgrade packages for Homebrew
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+
+- name: Install homebrew packages
+  homebrew:
+    name: "{{ pkgs }}"
+    state: present
+
+- name: Tap Homebrew font repository
+  homebrew_tap:
+    name: homebrew/cask-fonts
+
+- name: Install homebrew casks
+  homebrew_cask:
+    name: "{{ casks }}"
+    state: present

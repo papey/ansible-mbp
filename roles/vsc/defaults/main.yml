@@ -1,0 +1,41 @@
+---
+vsc_extensions:
+  - { name: "yarn", id: "gamunu.vscode-yarn" }
+  - { name: "yaml", id: "redhat.vscode-yaml" }
+  - { name: "whichkey", id: "VSpaceCode.whichkey" }
+  - { name: "space code", id: "VSpaceCode.vspacecode" }
+  - { name: "ruby snippets", id: "wingrunr21.vscode-ruby" }
+  - { name: "ruby around the block", id: "elliotlarson.ruby-around-the-block" }
+  - { name: "ruby", id: "rebornix.ruby" }
+  - { name: "solargraph", id: "castwide.solargraph" }
+  - { name: "endwise", id: "kaiwood.endwise" }
+  - { name: "python pylance", id: "ms-python.vscode-pylance" }
+  - { name: "python", id: "ms-python.python" }
+  - { name: "vim", id: "vscodevim.vim" }
+  - { name: "rust snippets", id: "polypus74.trusty-rusty-snippets" }
+  - { name: "todo hl", id: "wayou.vscode-todo-highlight" }
+  - { name: "systemd unit files", id: "coolbear.systemd-unit-file" }
+  - { name: "sqltools", id: "mtxr.sqltools" }
+  - { name: "rust-analyser", id: "matklad.rust-analyzer" }
+  - { name: "rest client", id: "humao.rest-client" }
+  - { name: "prettier", id: "esbenp.prettier-vscode" }
+  - { name: "path", id: "christian-kohler.path-intellisense" }
+  - { name: "npm intellisense", id: "christian-kohler.npm-intellisense" }
+  - { name: "npm", id: "eg2.vscode-npm-script" }
+  - { name: "markdown", id: "yzhang.markdown-all-in-one" }
+  - { name: "es6", id: "xabikos.javascriptsnippets" }
+  - { name: "go", id: "golang.go" }
+  - { name: "gitlens", id: "eamodio.gitlens" }
+  - { name: "gitignore", id: "codezombiech.gitignore" }
+  - { name: "git indicators", id: "lamartire.git-indicators" }
+  - { name: "github", id: "knisterpeter.vscode-github" }
+  - { name: "github PRs", id: "github.vscode-pull-request-github" }
+  - { name: "eslint", id: "dbaeumer.vscode-eslint" }
+  - { name: "react", id: "dsznajder.es7-react-js-snippets" }
+  - { name: "elixir", id: "jakebecker.elixir-ls" }
+  - { name: "editorconfig", id: "editorconfig.editorconfig" }
+  - { name: "docker", id: "ms-azuretools.vscode-docker" }
+  - { name: "codesnap", id: "adpyke.codesnap" }
+  - { name: "better comments", id: "aaron-bond.better-comments" }
+  - { name: "bearded icons", id: "beardedbear.beardedicons" }
+  - { name: "auto complete tags", id: "formulahendry.auto-complete-tag" }

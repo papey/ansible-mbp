@@ -1,0 +1,13 @@
+---
+- name: Ensure gpg pkgs
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - gpg
+    - pinentry-mac
+
+- name: GPG agent conf
+  copy:
+    src: home/.gnupg/gpg-agent.conf
+    dest: "{{ ansible_env.HOME }}/.gnupg/gpg-agent.conf"

@@ -1,0 +1,5 @@
+[user]
+    name = Wilfried OLLIVIER
+    email = wollivier@fdn.fr
+[core]
+    sshCommand = "ssh -i ~/.ssh/id_ecdsa_personal -F /dev/null"
