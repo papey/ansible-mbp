@@ -22,7 +22,9 @@
   gem:
     name: "{{ item }}"
     state: present
-    executable: "{{ ansible_env.HOME }}/.rbenv/versions/{{ ruby_version }}/bin/gem"
+    bindir: "{{ ansible_env.HOME }}/.rbenv/versions/{{ ruby_version }}/bin"
+    install_dir: "{{ ansible_env.HOME }}/.rbenv/versions/{{ ruby_version }}/lib/ruby/gems/{{ ruby_version }}"
+    user_install: false
   with_items:
     - rubocop
     - rubocop-daemon
