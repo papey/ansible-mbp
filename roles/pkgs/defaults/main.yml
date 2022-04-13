@@ -20,7 +20,6 @@ pkgs:
   - rustup-init
   - go
   - elixir
-  - node
   - yarn
   - crystal
   - rbenv
