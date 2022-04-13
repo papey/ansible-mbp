@@ -25,6 +25,7 @@
     hist = log --pretty=format:\"%Cred%h%Creset - %C(blue)%ad%Creset %Cgreen→%Creset %s%C(yellow)%d%Creset %C(magenta)[%an]%Creset\" --graph --date=short
     unst = reset HEAD
     la = "!git config -l | grep alias | cut -c 7-"
+    please = push --force-with-lease
 [http]
     sslVerify = true
 [merge]
