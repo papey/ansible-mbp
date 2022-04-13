@@ -4,10 +4,25 @@
     name: rbenv
     state: present
 
+- name: Check if ruby version is already installed
+  shell: "rbenv versions | grep {{ ruby_version }}"
+  register: ruby_installed
+  changed_when: false
+  ignore_errors: true
+
+- name: Install ruby version
+  shell: "rbenv install {{ ruby_version }}"
+  when: ruby_installed.rc != 0
+
+- name: Set global ruby version
+  shell: "rbenv global {{ ruby_version }}"
+  when: ruby_installed.rc != 0
+
 - name: Ensure gems
   gem:
     name: "{{ item }}"
     state: present
+    executable: "{{ ansible_env.HOME }}/.rbenv/versions/{{ ruby_version }}/bin/gem"
   with_items:
     - rubocop
     - rubocop-daemon
