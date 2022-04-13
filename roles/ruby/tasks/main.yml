@@ -12,6 +12,8 @@
     - rubocop
     - rubocop-daemon
     - solargraph
+    - ruby-debug-ide
+    - pry
 
 - name: Ensure rubocop-daemon-wrapper dir
   file:
