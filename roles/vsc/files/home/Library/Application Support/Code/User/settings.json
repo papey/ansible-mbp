@@ -41,6 +41,16 @@
         {
             "before": [
                 "<leader>",
+                "g",
+                "g",
+            ],
+            "commands": [
+                "extension.gitGrep"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "n"
             ],
             "commands": [

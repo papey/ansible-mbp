@@ -39,3 +39,4 @@ vsc_extensions:
   - { name: "better comments", id: "aaron-bond.better-comments" }
   - { name: "bearded icons", id: "beardedbear.beardedicons" }
   - { name: "auto complete tags", id: "formulahendry.auto-complete-tag" }
+  - { name: "git grep", id: "bokuweb.vscode-git-grep" }
