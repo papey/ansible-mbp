@@ -24,6 +24,7 @@ pkgs:
   - crystal
   - rbenv
   - nvm
+  - tldr
 
 casks:
   - amethyst
