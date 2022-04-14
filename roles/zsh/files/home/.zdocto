@@ -3,12 +3,13 @@ if command -v rbenv > /dev/null 2>&1; then
   eval "$(rbenv init -)";
 fi
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # doctolib utils
+function lnvm() {
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
+
 function devb() {
     bundle
     DISABLE_WEBPACKER_SERVER=1 HTTPS=1 rails s -u thin -b 127.0.0.1
