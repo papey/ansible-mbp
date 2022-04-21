@@ -177,6 +177,11 @@
         "command": "-extension.vim_ctrl+o",
         "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
     },
+    {
+        "key": "shift+alt+[Period]",
+        "command": "-gitlens.gitCommands",
+        "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+    },
     // Notifications
     {
         "key": "ctrl+y ;",
