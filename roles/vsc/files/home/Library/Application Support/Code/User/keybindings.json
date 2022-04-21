@@ -286,6 +286,10 @@
         "command": "magit.reverting",
         "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
     },
+    {
+        "key": "ctrl+[BracketRight]",
+        "command": "magit.process-log"
+    },
     // Magit resets
     {
         "key": "k",
