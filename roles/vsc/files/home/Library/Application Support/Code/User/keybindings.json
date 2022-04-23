@@ -290,6 +290,15 @@
         "key": "ctrl+[BracketRight]",
         "command": "magit.process-log"
     },
+    // Git
+    {
+        "key": "cmd+g cmd+c",
+        "command": "workbench.action.addComment"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "pr:github.focus"
+    },
     // Magit resets
     {
         "key": "k",
