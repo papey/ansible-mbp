@@ -132,14 +132,20 @@
     },
     // Diff navigation
     {
-        "key": "ctrl+d n",
+        "key": "ctrl+g n",
         "command": "workbench.action.compareEditor.nextChange",
-        "when": "textCompareEditorVisible"
     },
     {
-        "key": "ctrl+d p",
+        "key": "ctrl+g p",
         "command": "workbench.action.compareEditor.previousChange",
-        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "ctrl+g n",
+        "command": "workbench.action.editor.nextChange",
+    },
+    {
+        "key": "ctrl+g p",
+        "command": " workbench.action.compareEditor.previousChange",
     },
     // Error navigation
     {
