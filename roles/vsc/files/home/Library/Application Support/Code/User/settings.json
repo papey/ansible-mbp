@@ -255,6 +255,16 @@
             "commands": [
                 "extension.rubyBlockToggle"
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.tasks.runTask"
+            ]
         }
     ],
     "vim.leader": ",",
