@@ -28,8 +28,7 @@ vsc_extensions:
   - { name: "gitlens", id: "eamodio.gitlens" }
   - { name: "gitignore", id: "codezombiech.gitignore" }
   - { name: "git indicators", id: "lamartire.git-indicators" }
-  - { name: "github", id: "knisterpeter.vscode-github" }
-  - { name: "github PRs", id: "github.vscode-pull-request-github" }
+  - { name: "github", id: "github.vscode-pull-request-github" }
   - { name: "eslint", id: "dbaeumer.vscode-eslint" }
   - { name: "react", id: "dsznajder.es7-react-js-snippets" }
   - { name: "elixir", id: "jakebecker.elixir-ls" }
