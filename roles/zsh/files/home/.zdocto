@@ -16,7 +16,7 @@ function devb() {
 }
 
 function devf() {
-    npm run dev
+    lnvm && npm run dev
 }
 
 function devq() {
