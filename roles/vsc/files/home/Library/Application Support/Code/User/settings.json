@@ -349,7 +349,7 @@
     "[ruby]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
-        "editor.defaultFormatter": "rebornix.ruby"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
         "editor.tabSize": 2,
