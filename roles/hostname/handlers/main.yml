@@ -1,4 +1,0 @@
----
-- name: flush dns cache
-  command: dscacheutil -flushcache
-  become: true

@@ -4,9 +4,6 @@
     - role: prepare
       tags:
         - prepare
-    - role: hostname
-      tags:
-        - hostname
     - role: osx
       tags:
         - osx

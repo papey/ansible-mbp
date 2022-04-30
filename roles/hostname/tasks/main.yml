@@ -1,9 +1,0 @@
----
-- name: Update hostname
-  shell: |
-    scutil --set HostName {{ hostname }}
-    scutil --set LocalHostName {{ hostname }}
-    scutil --set ComputerName {{ hostname }}
-  notify: flush dns cache
-  changed_when: true
-  become: true
