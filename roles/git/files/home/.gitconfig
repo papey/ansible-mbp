@@ -13,6 +13,9 @@
     ap = add -p
     co = checkout
     cob = checkout -b
+    sw = switch
+    swb = switch -b
+    re = restore
     d = diff
     pr = pull --rebase
     dc = diff --cached
