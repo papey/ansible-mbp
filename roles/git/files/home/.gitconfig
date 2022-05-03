@@ -11,6 +11,7 @@
     ac = git add . && git commit -am
     a = add
     ap = add -p
+    cb = branch --show-current
     co = checkout
     cob = checkout -b
     sw = switch
