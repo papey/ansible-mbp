@@ -14,7 +14,7 @@
     co = checkout
     cob = checkout -b
     sw = switch
-    swb = switch -b
+    swc = switch -c
     re = restore
     d = diff
     pr = pull --rebase
