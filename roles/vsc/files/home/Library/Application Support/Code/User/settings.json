@@ -336,7 +336,6 @@
     "ruby.lint": {
         "rubocop": true
     },
-    "ruby.format": "rubocop",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2,
