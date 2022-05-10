@@ -22,6 +22,7 @@
     dc = diff --cached
     cv = commit --verbose
     ci = commit
+    cane = commit --amend --no-edit
     cam = commit -am
     s = status -s
     poop = push
