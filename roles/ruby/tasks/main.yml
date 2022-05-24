@@ -37,3 +37,8 @@
     url: https://raw.githubusercontent.com/fohte/rubocop-daemon/master/bin/rubocop-daemon-wrapper
     dest: /usr/local/bin/rubocop-daemon-wrapper/rubocop
     mode: +x
+
+- name: Ensure custom pry
+  copy:
+    src: "home/.pryrc"
+    dest: "{{ ansible_env.HOME }}/.pryrc"
