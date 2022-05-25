@@ -16,7 +16,7 @@ vsc_extensions:
   - { name: "todo hl", id: "wayou.vscode-todo-highlight" }
   - { name: "systemd unit files", id: "coolbear.systemd-unit-file" }
   - { name: "sqltools", id: "mtxr.sqltools" }
-  - { name: "rust-analyser", id: "matklad.rust-analyzer" }
+  - { name: "rust-analyser", id: "rust-lang.rust-analyzer" }
   - { name: "rest client", id: "humao.rest-client" }
   - { name: "prettier", id: "esbenp.prettier-vscode" }
   - { name: "path", id: "christian-kohler.path-intellisense" }
