@@ -112,6 +112,11 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "ctrl+q ctrl+g",
+        "command": "workbench.action.closeEditorsInGroup",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl+q ctrl+o",
         "command": "workbench.action.closeOtherEditors"
     },
