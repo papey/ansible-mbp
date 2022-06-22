@@ -4,6 +4,7 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
+  "vim.showMarksInGutter": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [
