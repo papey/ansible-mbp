@@ -164,7 +164,7 @@
     {
       "before": [
         "<leader>",
-        "o",
+        "g",
         "g"
       ],
       "commands": [
