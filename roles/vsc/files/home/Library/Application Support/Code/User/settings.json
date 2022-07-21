@@ -175,6 +175,16 @@
       "before": [
         "<leader>",
         "g",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
         "d"
       ],
       "commands": [
