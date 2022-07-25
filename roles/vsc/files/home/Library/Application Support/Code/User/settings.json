@@ -165,7 +165,7 @@
       "before": [
         "<leader>",
         "g",
-        "g"
+        "a"
       ],
       "commands": [
         "workbench.action.showAllSymbols"
